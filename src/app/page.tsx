@@ -1,9 +1,7 @@
-import Image from "next/image";
+import React from "react";
 
-export default function Home() {
-  return (
-    <>
-      <section className="bg-gray-500">This is HomePage🏠✨</section>
-    </>
-  );
-}
+const HomePage = () => {
+  return <section>HomePage📄</section>;
+};
+
+export default HomePage;

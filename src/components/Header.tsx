@@ -3,13 +3,14 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header>
-      <Link href="/">
-        <h1>{"chovlog"}</h1>
-      </Link>
+    <header className="text-secondary flex w-full select-none items-end pt-8 pb-12">
       <nav>
-        <Link href="/">Home</Link>
-        <Link href="/posts">Posts</Link>
+        <Link href="/" className="mr-2" aria-label="logo">
+          🏠Home
+        </Link>
+        <Link href="/posts" className="px-3 py-1.5">
+          📑Posts
+        </Link>
       </nav>
     </header>
   );
