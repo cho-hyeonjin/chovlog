@@ -1,3 +1,4 @@
+import MDViewer from "@/components/MDViewer";
 import { getPostData } from "@/service/posts";
 
 type Props = {
@@ -12,7 +13,7 @@ const PostPage = async ({ params: { slug } }: Props) => {
   return (
     <>
       <div>{post.title}</div>
-      <pre>{post.content}</pre>
+      <MDViewer content={post.content} />
     </>
   );
 };

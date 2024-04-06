@@ -42,7 +42,7 @@
     "category": "backend",
     "path": "node-basic",
     "imagePath": "07",
-    "featured": false
+    "featured": true
   },
   {
     "title": "리액트 Best Practice",
