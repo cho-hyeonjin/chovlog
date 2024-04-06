@@ -1,4 +1,3 @@
-import React from "react";
 import { Post } from "@/service/posts";
 import PostCard from "./PostCard";
 

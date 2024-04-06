@@ -1,4 +1,3 @@
-import React from "react";
 import { getFeaturedPosts } from "@/service/posts";
 import PostsGrid from "./PostsGrid";
 

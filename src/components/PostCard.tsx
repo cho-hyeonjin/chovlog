@@ -1,4 +1,3 @@
-import React from "react";
 import { Post } from "@/service/posts";
 import Link from "next/link";
 import Image from "next/image";
@@ -16,6 +15,7 @@ const PostCard = ({ post: { title, description, date, path } }: Props) => {
         alt={title}
         width={300}
         height={300}
+        className="h-64 w-full object-cover"
       />
       <div className="p-6">
         <div className="mb-2 flex w-full items-end">
