@@ -1,22 +1,23 @@
 import { readFile } from "fs/promises";
 import path from "path";
+import { allPosts, Post } from "contentlayer/generated";
 
-export type Post = {
-  title: string;
-  description: string;
-  date: Date;
-  category: string;
-  path: string;
-  imagePath: string;
-  featured: boolean;
-};
+// export type Post = {
+//   title: string;
+//   description: string;
+//   date: Date;
+//   category: string;
+//   path: string;
+//   imagePath: string;
+//   featured: boolean;
+// };
 
 export const getFeaturedPosts = async (): Promise<Post[]> => {
   return getAllPosts().then((posts) => posts.filter((post) => post.featured));
 };
 
 export const getAllPosts = async (): Promise<Post[]> => {
-  const filePath = path.join(process.cwd(), "data", "posts.json");
+  const filePath = path.join(process.cwd(), "posts.json");
   return readFile(filePath, "utf-8")
     .then<Post[]>(JSON.parse)
     .then((posts) => posts.sort((a, b) => (a.date > b.date ? -1 : 1)));
@@ -25,7 +26,7 @@ export const getAllPosts = async (): Promise<Post[]> => {
 export type PostData = Post & { content: string };
 
 export const getPostData = async (fileName: string): Promise<PostData> => {
-  const filePath = path.join(process.cwd(), "data", "posts", `${fileName}.md`);
+  const filePath = path.join(process.cwd(), "posts", `${fileName}.md`);
   const metadata = await getAllPosts().then((posts) =>
     posts.find((post) => post.path === fileName)
   );

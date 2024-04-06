@@ -1,17 +1,26 @@
+<!-- ---
+title: Node 기초 정리
+description: 알아두면 쓸데있는 Node 기초
+date: 2024-01-15
+category: backend
+path: node-basic
+imagePath: 07
+--- -->
+
 ## about Node.js®
 
 As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep.
 
 ```js
-const http = require('http');
+const http = require("http");
 
-const hostname = '127.0.0.1';
+const hostname = "127.0.0.1";
 const port = 3000;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
+  res.setHeader("Content-Type", "text/plain");
+  res.end("Hello World");
 });
 
 server.listen(port, hostname, () => {
