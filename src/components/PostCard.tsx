@@ -4,14 +4,16 @@ import Image from "next/image";
 
 type Props = { post: Post };
 
-const PostCard = ({ post: { title, description, date, path } }: Props) => {
+const PostCard = ({
+  post: { title, description, date, path, imagePath },
+}: Props) => {
   return (
     <Link
       href={`/posts/${path}`}
       className="overflow-hidden rounded-xl bg-neutral-200 dark:bg-neutral-800"
     >
       <Image
-        src={`/images/posts/${path}.jpg`}
+        src={`/images/posts/${imagePath}.jpg`}
         alt={title}
         width={300}
         height={300}

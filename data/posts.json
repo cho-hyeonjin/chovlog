@@ -1,72 +1,65 @@
 [
   {
-    "title": "타이틀1",
-    "description": "부제1",
-    "date": "2024-01-01",
-    "path": "11",
+    "title": "2023년 회고",
+    "description": "2023년 한해 동안 배운 기술들, 생각들 정리",
+    "date": "2023-12-15",
+    "category": "my story",
+    "path": "review-2023",
+    "imagePath": "02",
     "featured": true
   },
   {
-    "title": "타이틀2",
-    "description": "부제2",
+    "title": "자바스크립트랑 친해지기",
+    "description": "자바스크립트, 유연한 언어",
     "date": "2024-01-02",
-    "path": "08",
+    "category": "javascript",
+    "path": "javascript-basic",
+    "imagePath": "04",
     "featured": true
   },
   {
-    "title": "타이틀3",
-    "description": "부제3",
-    "date": "2024-01-03",
-    "path": "02",
-    "featured": true
-  },
-  {
-    "title": "타이틀4",
-    "description": "부제4",
-    "date": "2024-01-04",
-    "path": "03",
-    "featured": false
-  },
-  {
-    "title": "타이틀5",
-    "description": "부제5",
-    "date": "2024-01-05",
-    "path": "04",
-    "featured": true
-  },
-  {
-    "title": "타이틀6",
-    "description": "부제6",
-    "date": "2024-01-06",
-    "path": "05",
-    "featured": true
-  },
-  {
-    "title": "타이틀7",
-    "description": "부제7",
-    "date": "2024-01-07",
-    "path": "14",
-    "featured": true
-  },
-  {
-    "title": "타이틀8",
-    "description": "부제8",
-    "date": "2024-01-08",
-    "path": "07",
-    "featured": true
-  },
-  {
-    "title": "타이틀9",
-    "description": "부제9",
-    "date": "2024-01-09",
-    "path": "08",
-    "featured": false
-  },
-  {
-    "title": "타이틀10",
-    "description": "부제10",
+    "title": "자바스크립트 프로팁 10",
+    "description": "자바스크립트 잘 쓰기",
     "date": "2024-01-10",
-    "path": "15",
+    "category": "javascript",
+    "path": "javascript-10-tips",
+    "imagePath": "05",
+    "featured": true
+  },
+  {
+    "title": "타입스크립트 세계로 넘어가기",
+    "description": "안전한 타입 스크립트의 세계로",
+    "date": "2024-01-20",
+    "category": "typescript",
+    "path": "typescript-intro",
+    "imagePath": "15",
+    "featured": true
+  },
+  {
+    "title": "Node 기초 정리",
+    "description": "알아두면 쓸데있는 Node 기초",
+    "date": "2024-01-15",
+    "category": "backend",
+    "path": "node-basic",
+    "imagePath": "07",
+    "featured": false
+  },
+  {
+    "title": "리액트 Best Practice",
+    "description": "리액트 정확하게 사용하기",
+    "date": "2024-01-24",
+    "category": "frontend",
+    "path": "best-react-practices",
+    "imagePath": "12",
+    "featured": true
+  },
+  {
+    "title": "리액트 18버전",
+    "description": "리액트 18버전 추가/변경사항",
+    "date": "2024-01-30",
+    "category": "frontend",
+    "path": "react18-walkthrough",
+    "imagePath": "14",
     "featured": true
   }
 ]
