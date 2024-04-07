@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { cx } from "../utils";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="mx-auto max-w-3xl px-6 lg:max-w-6xl lg:px-8">
+      <body
+        className={cx(
+          "mx-auto max-w-3xl px-6 lg:max-w-6xl lg:px-8 bg-light dark:bg-dark"
+        )}
+      >
         <Header />
         <main className="relative pb-16">{children}</main>
         <Footer />

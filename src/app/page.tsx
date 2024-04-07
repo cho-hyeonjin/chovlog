@@ -1,11 +1,9 @@
+import React from "react";
 import FeaturedPosts from "@/components/FeaturedPosts";
 
 const HomePage = () => {
   return (
     <>
-      <h2 className="text-2xl font-bold tracking-tight md:text-4xl mb-6 text-neutral-200 border">
-        chovlog
-      </h2>
       <FeaturedPosts />
     </>
   );
