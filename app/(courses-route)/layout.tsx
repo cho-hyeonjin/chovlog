@@ -1,6 +1,6 @@
 import Footer from "@/components/footer/footer";
-import Header from "@/components/nav-bar/nav-bar";
-import { NAV_BAR_ITEMS } from "@/constants";
+import Navbar from "@/components/nav-bar/nav-bar";
+// import { NAV_BAR_ITEMS } from "@/constants";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex h-ful w-full flex-col gap-10">
-      <Header />
+      <Navbar />
       {children}
-      <Footer links={NAV_BAR_ITEMS} />
+      <Footer />
     </div>
   );
 }

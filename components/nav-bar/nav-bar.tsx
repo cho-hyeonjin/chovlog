@@ -1,16 +1,30 @@
 import { NAV_BAR_ITEMS } from "@/constants";
-import HeaderLinks from "./nav-bar-links";
-// import HeaderRight from "./nav-bar-right";
+import NavbarLinks from "./nav-bar-links";
+// import NavbarRight from "./nav-bar-right";
 import ResponsiveNavSidebar from "./responsive-sidebar-nav";
+import logo3 from "@/public/logo3.png";
+import Image from "next/image";
+import Link from "next/link";
 
-const Header = () => {
+const Navbar = () => {
   return (
     <div>
       <div className="flex justify-between items-center h-20">
-        <div>Logo</div>
-        <HeaderLinks links={NAV_BAR_ITEMS} />
+        <Link href="/" className="flex items-center">
+          <div className="w-14 md:w-18 overflow-hidden">
+            <Image
+              src={logo3}
+              alt="logo-dark"
+              className="w-full"
+              sizes="20vw"
+              priority
+            />
+          </div>
+          <span className="ml-1 font-bold text-xl text-light">Jovlog</span>
+        </Link>
+        <NavbarLinks links={NAV_BAR_ITEMS} />
         {/* <div className="hidden md:flex">
-          <HeaderRight />
+          <NavbarRight />
         </div> */}
         <div className="flex md:hidden">
           <ResponsiveNavSidebar />
@@ -21,4 +35,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

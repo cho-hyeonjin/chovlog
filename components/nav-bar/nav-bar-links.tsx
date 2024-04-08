@@ -10,12 +10,12 @@ import { cn } from "@/lib/utils";
 import { NAV_LINK } from "@/types";
 import Link from "next/link";
 
-interface IHeaderLinks {
+interface INavbarLinks {
   links: NAV_LINK[];
   className?: string;
 }
 
-const HeaderLinks: React.FC<IHeaderLinks> = ({ links, className }) => {
+const NavbarLinks: React.FC<INavbarLinks> = ({ links, className }) => {
   return (
     <NavigationMenu className={cn("hidden md:flex", className)}>
       <NavigationMenuList className={className}>
@@ -35,4 +35,4 @@ const HeaderLinks: React.FC<IHeaderLinks> = ({ links, className }) => {
   );
 };
 
-export default HeaderLinks;
+export default NavbarLinks;

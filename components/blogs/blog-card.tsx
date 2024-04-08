@@ -4,7 +4,7 @@ import {
   CardFooter,
   CardTitle,
   CardDescription,
-  CardHeader,
+  CardNavbar,
 } from "@/components/ui/card";
 import TestImg from "@/public/lego-techronaut.jpg";
 import Image from "next/image";
@@ -31,9 +31,9 @@ const BlogCard: React.FC<IBlogCard> = ({ post }) => {
           // className="rounded-tl-md rounded-tr-md"
           className="h-64 w-full object-cover"
         />
-        <CardHeader className="h-[80px] ">
+        <CardNavbar className="h-[80px] ">
           <CardTitle>{post.title}</CardTitle>
-        </CardHeader>
+        </CardNavbar>
         <CardContent className="h-full md:h-[150px]">
           <CardDescription className="line-clamp-6 text-neutral-400">
             {post.description}
