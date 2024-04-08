@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 import Logo from "./Logo";
-import { MoonIcon, SunIcon } from "../components/Icons";
-import { useThemeSwitch } from "../components/Hooks/useThemeSwitch";
+import { MoonIcon, SunIcon } from "./Icons";
+import { useThemeSwitch } from "./Hooks/useThemeSwitch";
 import { useState } from "react";
 import { cx } from "../utils";
 
