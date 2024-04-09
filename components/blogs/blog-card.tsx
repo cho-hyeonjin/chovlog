@@ -37,14 +37,9 @@ const BlogCard: React.FC<IBlogCard> = ({ post }) => {
         <CardContent className="h-full md:h-[150px]">
           <CardDescription className="line-clamp-6 text-neutral-400">
             {post.description}
-            {post.description}
-            {post.description}
-            {post.description}
-            {post.description}
           </CardDescription>
         </CardContent>
-        {/* <CardFooter className='flex justify-between'>
-        </CardFooter> */}
+        <CardFooter className="flex justify-between"></CardFooter>
       </Card>
     </Link>
   );
