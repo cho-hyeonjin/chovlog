@@ -16,7 +16,7 @@ const Footer = () => {
         >
           <LinkedinIcon size={14} />
         </Link>
-        <Link href="https://github.com/cho-hyeonjin" target="_blank">
+        <Link href="mailto:gusls2005@gmail.com" target="_blank">
           <Mail size={14} />
         </Link>
         <Link href="https://youtube.com/@justdoiteveryday" target="_blank">
